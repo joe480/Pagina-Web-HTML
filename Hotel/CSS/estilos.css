@@ -1,0 +1,11 @@
+#contenedor{
+    width: 250px;
+    margin: 0 auto;
+    border: solid 2px black;
+}
+
+#contenedorRegistro{
+    width: 350px;
+    margin: 0 auto;
+    border: solid 2px black;
+}
