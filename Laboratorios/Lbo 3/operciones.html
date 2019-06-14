@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<script>
+function sumr(){
+    var n=document.getElementById("N").value
+    n=parseInt(n)
+    var signo="+"
+    var igual="="
+    var c=0
+    for(var i=1;i<=10;i++){
+        var res=n+i;
+        for(var j=1;j<=5;j++){
+            c++
+            switch(j%5){
+                case 1:
+                document.getElementById(c).innerHTML=n
+                break
+                case 2:
+                document.getElementById(c).innerHTML=signo
+                break
+                case 3:
+                document.getElementById(c).innerHTML=i
+                break
+                case 4:
+                document.getElementById(c).innerHTML=igual
+                break
+                case 0:
+                document.getElementById(c).innerHTML=res
+                break
+            }
+        }
+    }
+}
+function restr(){
+    var n=document.getElementById("N").value
+    n=parseInt(n)
+    var signo="-"
+    var igual="="
+    var c=0
+    for(var i=1;i<=10;i++){
+        var res=(n*i)-n;
+        for(var j=1;j<=5;j++){
+            c++
+            switch(j%5){
+                case 1:
+                document.getElementById(c).innerHTML=n*i
+                break
+                case 2:
+                document.getElementById(c).innerHTML=signo
+                break
+                case 3:
+                document.getElementById(c).innerHTML=n
+                break
+                case 4:
+                document.getElementById(c).innerHTML=igual
+                break
+                case 0:
+                document.getElementById(c).innerHTML=res
+                break
+            }
+        }
+    }
+}
+
+function multiplicr(){
+    var n=document.getElementById("N").value
+    n=parseInt(n)
+    var signo="*"
+    var igual="="
+    var c=0
+    for(var i=1;i<=10;i++){
+        var res=n*i;
+        for(var j=1;j<=5;j++){
+            c++
+            switch(j%5){
+                case 1:
+                document.getElementById(c).innerHTML=n
+                break
+                case 2:
+                document.getElementById(c).innerHTML=signo
+                break
+                case 3:
+                document.getElementById(c).innerHTML=i
+                break
+                case 4:
+                document.getElementById(c).innerHTML=igual
+                break
+                case 0:
+                document.getElementById(c).innerHTML=res
+                break
+            }
+        }
+    }
+}
+
+function dividir(){
+    var n=document.getElementById("N").value
+    n=parseInt(n)
+    var signo="/"
+    var igual="="
+    var c=0
+    for(var i=1;i<=10;i++){
+        var res=(n*i)/n;
+        for(var j=1;j<=5;j++){
+            c++
+            switch(j%5){
+                case 1:
+                document.getElementById(c).innerHTML=n*i
+                break
+                case 2:
+                document.getElementById(c).innerHTML=signo
+                break
+                case 3:
+                document.getElementById(c).innerHTML=n
+                break
+                case 4:
+                document.getElementById(c).innerHTML=igual
+                break
+                case 0:
+                document.getElementById(c).innerHTML=res
+                break
+            }
+        }
+    }
+}   
+
+</script>
+<body>
+    <label for="txtN">Introducir Numero:</label>
+    <input type="text" name="txtN" id="N"> <br><br>
+    <button onclick="sumr()" class="boton">Sumar</button>
+    <button onclick="restr()" class="boton">Restar</button>
+    <button onclick="multiplicr()" class="boton">Multiplicar</button>
+    <button onclick="dividir()" class="boton">Dividir</button>
+    <div id="contenedor">   
+    <table width=380px height=200px>
+        <tr>
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+            <td id="4"></td>
+            <td id="5"></td>
+        </tr>
+        <tr>
+            <td id="6"></td>
+            <td id="7"></td>
+            <td id="8"></td>
+            <td id="9"></td>
+            <td id="10"></td>
+        </tr>
+        <tr>
+            <td id="11"></td>
+            <td id="12"></td>
+            <td id="13"></td>
+            <td id="14"></td>
+            <td id="15"></td>
+        </tr>
+        <tr>
+            <td id="16"></td>
+            <td id="17"></td>
+            <td id="18"></td>
+            <td id="19"></td>
+            <td id="20"></td>
+        </tr>
+        <tr>
+            <td id="21"></td>
+            <td id="22"></td>
+            <td id="23"></td>
+            <td id="24"></td>
+            <td id="25"></td>
+        </tr>
+        <tr>
+            <td id="26"></td>
+            <td id="27"></td>
+            <td id="28"></td>
+            <td id="29"></td>
+            <td id="30"></td>
+        </tr>
+        <tr>
+            <td id="31"></td>
+            <td id="32"></td>
+            <td id="33"></td>
+            <td id="34"></td>
+            <td id="35"></td>
+        </tr>
+        <tr>
+            <td id="36"></td>
+            <td id="37"></td>
+            <td id="38"></td>
+            <td id="39"></td>
+            <td id="40"></td>
+        </tr>
+        <tr>
+            <td id="41"></td>
+            <td id="42"></td>
+            <td id="43"></td>
+            <td id="44"></td>
+            <td id="45"></td>
+        </tr>
+        <tr>
+            <td id="46"></td>
+            <td id="47"></td>
+            <td id="48"></td>
+            <td id="49"></td>
+            <td id="50"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
